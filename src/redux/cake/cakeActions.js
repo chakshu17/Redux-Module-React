@@ -1,7 +1,8 @@
-import { BUY_CAKE } from "./caketypes";
+import { BUY_CAKE } from "./cakeTypes";
 // Defining of action.
-export const buycakes = () => {
+export const buycakes= () => {
 	return {
 		type: BUY_CAKE,
 	};
 };
+

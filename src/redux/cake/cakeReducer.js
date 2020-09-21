@@ -1,17 +1,19 @@
 // reducer is () that accpets state, and action as parameters. and return the new state
-import { BUY_CAKE } from './cakeTypes'
+import { BUY_CAKE } from "./cakeTypes";
 
 const initialState = {
 	numOfCake: 10,
 };
 const cakeReducer = (state = initialState, action) => {
 	switch (action.type) {
-        case BUY_CAKE:return{
-            ...state,
-            numOfCake:state.numOfCake-1
-        }
-        default: return state
+		case BUY_CAKE:
+			return {
+				...state,
+				numOfCake: state.numOfCake - 1,
+			};
+		default:
+			return state;
 	}
 };
 
-export default cakeReducer
+export default cakeReducer;
