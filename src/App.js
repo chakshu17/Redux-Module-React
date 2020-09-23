@@ -4,6 +4,7 @@ import './App.css';
 import CakeContainer from './components/CakeContainer';
 import HooksCakeContainer from './components/HooksCakeContainer';
 import IceCreamContainer from './components/IceCreamContainer';
+import ItemContainer from './components/ItemContainer';
 import NewCakeContainer from './components/NewCakeContainer';
 import store from './redux/store'
 
@@ -13,6 +14,8 @@ function App() {
       <div className="App" style={{color: 'balck',background:'white'}}>
       Redux Module
       <div>
+        <ItemContainer cake/>
+        <ItemContainer/>
         <CakeContainer/>
         <HooksCakeContainer/>
         <IceCreamContainer/>
