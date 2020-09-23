@@ -1,7 +1,12 @@
 import { applyMiddleware, createStore } from "redux";
 import logger from "redux-logger";
 import rootReducer from "./rootReducer";
+import { composeWithDevTools } from "redux-devtools-extension";
+const store = createStore(
+	rootReducer,
+	composeWithDevTools(applyMiddleware(logger))
+);
 
-const store = createStore(rootReducer,applyMiddleware(logger));
-
-export default store
+export default store;
+// redux devtool extension
+// intall through chrome extension and github
