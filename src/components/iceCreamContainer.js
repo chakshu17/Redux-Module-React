@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { buyIceCream } from "../redux";
 
-function iceCreamContainer(props) {
+function IceCreamContainer(props) {
 	return (
 		<div>
 			<h2>Number of iceCream: {props.numOfIceCreams} </h2>
@@ -21,4 +21,4 @@ const mapDispatchToProps = (dispatch) => {
 	};
 };
 
-export default connect(mapStateToProps,mapDispatchToProps) (iceCreamContainer);
+export default connect(mapStateToProps,mapDispatchToProps) (IceCreamContainer);
