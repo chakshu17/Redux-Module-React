@@ -14,11 +14,15 @@ function CakeContainer(props) {
 }
 
 // in this function state from redux store  is mapped to our component props
+// when you want to access the reduc state in your component you define map state to props funtion
+// it get redux state as a parameter , which can be used to retrieve the appropiate state properties
 const mapStateToProps = (state) => {
 	return {
 		numOfCakes: state.numOfCakes,
 	};
 };
+// for diapacthing options,
+// this function gets dispatch method as a paramter and allows us to map action creaters in our component
 
 const mapDispatchToProps = (dispatch) => {
 	return {
@@ -27,3 +31,4 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(CakeContainer);
+// connect () connect redux components to redux door. ie. coonect container cake to redux door
