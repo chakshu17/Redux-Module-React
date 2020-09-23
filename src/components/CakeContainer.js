@@ -18,7 +18,7 @@ function CakeContainer(props) {
 // it get redux state as a parameter , which can be used to retrieve the appropiate state properties
 const mapStateToProps = (state) => {
 	return {
-		numOfCakes: state.numOfCakes,
+		numOfCakes: state.cake.numOfCakes,
 	};
 };
 // for diapacthing options,
