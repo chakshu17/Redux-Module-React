@@ -13,6 +13,7 @@ function CakeContainer(props) {
 	);
 }
 
+// in this function state from redux store  is mapped to our component props
 const mapStateToProps = (state) => {
 	return {
 		numOfCakes: state.numOfCakes,
