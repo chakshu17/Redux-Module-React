@@ -6,6 +6,7 @@ import {
 } from "./userTypes";
 
 export const fetchUserRequest = () => {
+	
 	return {
 		type: FETCH_USERS_REQUEST,
 	};
