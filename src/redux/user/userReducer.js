@@ -4,7 +4,6 @@ import {
 	FETCH_USERS_FAILURE,
 } from "./userTypes";
 
-
 const intialState = {
 	loading: false,
 	data: [],
