@@ -3,6 +3,7 @@ import { Provider } from "react-redux";
 import "./App.css";
 
 import UserContainer from "./components/UserContainer";
+import NewCakeContainer from "./components/NewCakeContainer";
 import store from "./redux/store";
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
 			<div className="App" style={{ color: "balck", background: "white" }}>
 				Redux Module
 				<div>
-					<UserContainer />
+					<NewCakeContainer />
 					{/* <ItemContainer cake/>
         <ItemContainer/>
         <CakeContainer/>
